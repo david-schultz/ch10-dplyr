@@ -10,3 +10,4 @@ Exercises for [chapter 10](https://info201.github.io/dplyr.html).
 * 6: join datasets
 * 7: play with real data (NBA teams)
 * 8: play with real data (Pullitzer price winners)
+* 9: ncbirth data, grouping, computing, missings

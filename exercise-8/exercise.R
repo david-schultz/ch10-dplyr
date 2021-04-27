@@ -1,36 +1,50 @@
-# Exercise 8: Pulitzer Prizes
+### Exercise 8: Pulitzer Prizes
 
-# Read in the data
-pulitzer <- read.csv("data/pulitzer-circulation-data.csv", stringsAsFactors = FALSE)
-
-# Install and load the needed libraries
-# Be sure to comment out the install.packages function so it won't install it every time it runs
-# Remeber you only need to install a package once
-#install.packages(dplyr)
-library(dplyr)
-
-# View in the data set. Start to understand what the data columns contains
-# Be sure to comment out the function so it won't view everytime you run the code.
+### Read in the data.  It is comma-separated, so read with read.csv
 
 
-# Use 'colnames' to print out the names of the columns
+## Install and load the needed libraries
+## Be sure to comment out the install.packages function so it won't install it every time it runs
+## Remeber you only need to install a package once
+## install.packages(dplyr)
 
 
-# Use 'str' to print what types of values are contained in each column
-# Did any value type surprise you? Why do you think they are that type?
+## Print a few random lines from the dataset
+## Use 'head' and 'tail' to print first and last line
+## check out 'sample_n' to print random lines
 
 
-# Add a column in a dataframe called 'Pulitzer.Prize.Change` that contains the diffrence in changes
-# in Pulitzer Prize Winners from 2004 to 2013 and Pultizer Prize Winners from 1990 to 2003.
+## Use 'names' or 'colnames' to print out the names of the columns
+## What do you think about the variable names?
 
 
-# What publication gained the most pulitzer prizes from 2004-2014?
-# Be sure to use the pipe operator! 
+## Rename the variables into something easier, e.g.
+## 'circulation2004' and 'winners1990.2003'
+## hint: check out dplyr function 'rename'
 
 
-# Which publication with at least 5 Pulitzers won from 2004-2014 had the biggest decrease(negative) in Daily circulation numbers? 
-# This publication should have Pulitzer prizes won a minimum of 5 Pulitzers, as well as the biggest decrease in circulation
+## Use 'str' to print what types of values are contained in each column
+## Did any value type surprise you?  Why do you think they are that type?
+
+
+## Add a column in a dataframe called 'difference'
+## that contains the difference in changes
+## in Pulitzer Prize Winners from 2004 to 2013 and
+## Pulitzer Prize Winners from 1990 to 2003.
+
+
+## What publication gained the most pulitzer prizes from 2004-2014?
+## Be sure to use the pipe operator! 
+
+
+## Which publication with at least 5 Pulitzers won from 2004-2014
+## had the biggest fall (negative growth) in Daily circulation numbers? 
+## This publication should have Pulitzer prizes won a minimum of 5 Pulitzers,
+## as well as the biggest decrease in circulation
 
 
 # Your turn! An important part about being a data scientist is asking questions. 
 # Create a question and use dplyr to figure out the answer.  
+
+  
+
