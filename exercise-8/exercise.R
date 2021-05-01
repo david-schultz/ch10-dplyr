@@ -1,22 +1,26 @@
 ### Exercise 8: Pulitzer Prizes
 
 ### Read in the data.  It is comma-separated, so read with read.csv
-
+pulitzer <- read.csv("data/pulitzer-circulation-data.csv")
 
 ## Install and load the needed libraries
 ## Be sure to comment out the install.packages function so it won't install it every time it runs
 ## Remeber you only need to install a package once
 ## install.packages(dplyr)
+library(dplyr)
 
 
 ## Print a few random lines from the dataset
 ## Use 'head' and 'tail' to print first and last line
 ## check out 'sample_n' to print random lines
+head(pulitzer)
+tail(pulitzer)
+sample_n(pulitzer, 5)
 
 
 ## Use 'names' or 'colnames' to print out the names of the columns
 ## What do you think about the variable names?
-
+print(colnames(pulitzer))
 
 ## Rename the variables into something easier, e.g.
 ## 'circulation2004' and 'winners1990.2003'
